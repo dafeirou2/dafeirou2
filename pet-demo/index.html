@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一口进化 · 像素宠物养成</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='7' width='24' height='22' rx='4' fill='%23bca27b'/%3E%3Cpath d='M10 14h12v9H10z' fill='%23f4e6c9'/%3E%3Cpath d='M12 16h2v3h-2zm6 0h2v3h-2z'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="responsive.css"></head>
+<body>
+<link rel="stylesheet" href="evolution.css"><link rel="stylesheet" href="reveal.css">
+<div class="app">
+ <header><a class="brand" href="#" aria-label="返回首页"><span class="brand-icon">▦</span><div data-i18n="brand">一口进化<small data-i18n="brandSub">吃出惊喜，收集你的伙伴</small></div></a><nav aria-label="主导航"><button data-view="home" class="selected" data-i18n="navPlay">开始挑战</button><button data-view="collection"><span data-i18n="navCollection">我的图鉴</span> <span id="nav-count">0</span></button><button data-view="board" data-i18n="navBoard">现场挑战榜</button></nav><div class="header-tools"><label class="language-picker"><span class="sr-only">Language</span><select id="language" aria-label="Language"><option value="zh">中文</option><option value="en">English</option><option value="de">Deutsch</option></select></label><button class="identity" id="identity">建立玩家身份 ↗</button></div></header>
+ <main id="content"></main>
+ <footer><span><i></i> <span data-i18n="localOnly">现场试玩版 · 数据仅保存在此浏览器</span></span><span data-i18n="tagline">60 秒，养出一点不一样。</span><button id="motion">动效：开启</button><button id="voice">旁白：开启</button><button id="sound">音效与音乐：开启</button></footer>
+</div>
+<dialog id="profile-dialog"><form id="profile-form"><span class="eyebrow">很高兴遇见你</span><h2>这只宠物，该怎么称呼你？</h2><p>选一个昵称，开始你的第一场进化。无需注册密码。</p><label>玩家昵称<input id="nickname" maxlength="12" placeholder="例如：小林" autocomplete="off" required></label><p class="muted">现场身份仅存于本机。输入已有昵称会继续该昵称的收藏，不是安全账号登录。</p><div class="actions"><button type="button" id="cancel-profile" class="ghost">取消</button><button class="primary" type="submit">准备好了 →</button></div></form></dialog>
+<dialog id="card-dialog"><button id="close-card" class="close" aria-label="关闭">×</button><div id="card-detail"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="i18n.js"></script><script src="visuals.js"></script><script src="personality.js"></script><script src="game.js"></script>
+</body></html>
