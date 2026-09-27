@@ -4,12 +4,26 @@ const PERSONAS = [
  {id:2,family:2,food:2,name:'芝士机甲喵',en:'CHEESE ZERO',style:'二次元系',tag:'芝士就是反应堆',color:'#d6bbff',names:['芝士球','见习机甲喵','双翼机甲喵','终式芝士机神'],lore:'相信披萨的第八片藏着变身密码。披风是拉丝芝士，机甲靠热量充能——请不要切断它的夜宵。'},
  {id:4,family:0,food:4,name:'香蕉冲浪猴',en:'BANANA WAVE',style:'街头系',tag:'快乐不需要刹车',color:'#f5d373',names:['小蕉球','卷尾小猴','长臂冲浪猴','巨尾街头猴王'],lore:'吃香蕉补充的不是能量，是多余的自信。尾巴兼任滑板，路过每个黑洞都觉得自己帅炸了。'},
  {id:5,family:0,food:5,name:'西兰花博士',en:'BROCCOLI IQ',style:'眼镜学者系',tag:'脑袋比饭量还大',color:'#a4cf87',names:['菜菜球','圆镜小鸮','书翼猫头鹰','巨脑森林博士'],lore:'每天三份西兰花，坚持相信智商可以嚼出来。头越来越大，眼镜越来越厚，但还是算不清外卖满减。'},
- {id:6,family:1,food:6,name:'鱼鱼星海灵',en:'TIDAL DREAM',style:'幻想系',tag:'把晚餐吃成银河',color:'#86d4e3',names:['小鱼泡','鳍耳幼灵','长尾星海灵','六鳍银河游龙'],lore:'鲜鱼吃多了，连梦都自带海浪声。长出六片星鳍之后，正式宣布：所有水族箱都是它的分公司。'}
+ {id:6,family:1,food:6,name:'鱼鱼星海灵',en:'TIDAL DREAM',style:'幻想系',tag:'把晚餐吃成银河',color:'#86d4e3',names:['小鱼泡','鳍耳幼灵','长尾星海灵','六鳍银河游龙'],lore:'鲜鱼吃多了，连梦都自带海浪声。长出六片星鳍之后，正式宣布：所有水族箱都是它的分公司。'},
+ {id:3,family:1,food:9,name:'寿司柴犬',en:'SUSHI SHIBA',style:'日系',tag:'饭团能量',color:'#f0b37d',names:['寿司团','饭团柴','寿司武士','究极寿司将军'],lore:'对寿司的虔诚，让它把尾巴卷成了饭团。'},
+ {id:7,family:0,food:7,name:'牛油果龟',en:'AVO TURTLE',style:'自然系',tag:'慢慢变强',color:'#93c77f',names:['果核龟','青壳龟','森甲陆龟','古树巨龟'],lore:'走得慢，却永远不会错过下一口牛油果。'},
+ {id:8,family:0,food:8,name:'葡萄蝙蝠',en:'GRAPE BAT',style:'暗夜系',tag:'夜行动物',color:'#a789d3',names:['葡萄球','小翼蝠','紫晶夜蝠','月影蝠王'],lore:'白天睡觉，晚上偷偷把葡萄串当耳环。'},
+ {id:9,family:2,food:10,name:'甜甜圈羊',en:'DONUT RAM',style:'甜酷系',tag:'糖分冲刺',color:'#f3a5bb',names:['糖圈团','卷角羊','霜糖公羊','彩虹羊王'],lore:'角不是武器，是两枚永远吃不完的甜甜圈。'},
+ {id:10,family:1,food:11,name:'塔可狐',en:'TACO FOX',style:'街头系',tag:'脆皮侦探',color:'#dfac65',names:['小脆狐','塔可狐','火椒灵狐','辣焰九尾'],lore:'耳朵能听见三条街外塔可皮碎裂的声音。'},
+ {id:11,family:2,food:12,name:'冰淇淋企鹅',en:'GELATO PENGUIN',style:'清凉系',tag:'零度飞行',color:'#aad7ed',names:['雪团啾','小企鹅','冰冠企鹅','极光帝企鹅'],lore:'每次打滑都说自己是在排练滑冰。'},
+ {id:12,family:0,food:13,name:'胡萝卜鹿',en:'CARROT DEER',style:'森林系',tag:'跃过烦恼',color:'#e8a466',names:['芽芽鹿','胡萝卜鹿','角枝奔鹿','森野鹿王'],lore:'鹿角会跟着胡萝卜的甜味开花。'},
+ {id:13,family:1,food:14,name:'汉堡狗',en:'BURGER HOUND',style:'美式',tag:'双层热情',color:'#d68757',names:['面包狗','肉饼犬','双层猎犬','巨无霸犬王'],lore:'闻到汉堡就会自动开启飞奔模式。'},
+ {id:14,family:0,food:15,name:'草莓蛙',en:'BERRY FROG',style:'俏皮系',tag:'粉红跳跃',color:'#ef7981',names:['莓莓蛙','草莓蛙','荷叶跳蛙','莓果蛙王'],lore:'跳得越高，脸颊上的草莓籽越亮。'},
+ {id:15,family:1,food:16,name:'拉面蛇',en:'RAMEN SERPENT',style:'和风',tag:'热汤盘旋',color:'#e6bd75',names:['面条蛇','拉面蛇','汤纹灵蛇','龙汤长蛇'],lore:'自称是面条，其实只是很怕冷。'},
+ {id:16,family:2,food:17,name:'可颂龙猫',en:'CROISSANT CAT',style:'慵懒系',tag:'黄油午睡',color:'#e8b96d',names:['酥皮猫','可颂猫','月牙龙猫','黄油猫神'],lore:'蓬松的尾巴像一块刚出炉的可颂。'},
+ {id:17,family:2,food:20,name:'星爆爆米花龙',en:'POPSTAR WYRM',style:'稀有 / 霓虹',tag:'SSS 星爆异变',color:'#ffd878',names:['星爆龙','星爆龙','星爆龙','星爆龙'],lore:'黑洞将一粒爆米花压缩成了会唱歌的小龙。',rare:true},
+ {id:18,family:1,food:19,name:'黑洞章鱼王',en:'VOID OCTO',style:'稀有 / 虚空',tag:'SSS 黑洞异变',color:'#ad9aed',names:['虚空章鱼','虚空章鱼','虚空章鱼','虚空章鱼'],lore:'触手摸到哪里，哪里就会变成舞台。',rare:true},
+ {id:19,family:0,food:23,name:'极光蓝莓九尾',en:'AURORA NINE',style:'稀有 / 极光',tag:'SSS 极光异变',color:'#87a8f5',names:['极光九尾','极光九尾','极光九尾','极光九尾'],lore:'尾巴扫过夜空时，会留下蓝莓色的极光。',rare:true}
 ];
 const personaById=id=>PERSONAS.find(p=>p.id===Number(id))||PERSONAS[0];
 function dominantPersona(types,family=0){if(!types||!types.some(n=>n>0))return [0,1,2][family]||0;return PERSONAS.reduce((best,p)=>{const score=FOODS.reduce((n,f,i)=>n+(f.persona===p.id?(types[i]||0):0),0),bestScore=FOODS.reduce((n,f,i)=>n+(f.persona===best.id?(types[i]||0):0),0);return score>bestScore?p:best},PERSONAS[0]).id}
 function personaFor(c){return personaById(c.persona??dominantPersona(c.types,c.family))}
-function collectibleKey(c){return 'p'+personaFor(c).id+'-'+(c.variant?4:c.stage)}
+function collectibleKey(c){return 'p'+personaFor(c).id}
 function petLore(c){const p=personaFor(c),n=c.types?.[p.food]||0;return (n?'本局吃了 '+n+' 份'+FOODS[p.food].name+'。':'最爱'+FOODS[p.food].name+'。')+p.lore+(c.variant?'稀有异变：星核觉醒，连出场都要自带灯光。':'')}
 function drawFood(ctx,type,x,y,size=48){ctx.save();ctx.font=size+'px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.shadowColor='#0009';ctx.shadowBlur=3;ctx.shadowOffsetY=2;ctx.fillText(['🍎','🍗','🍕','💣','🍌','🥦','🐟','🥑','🍇','🍣','🍩','🌮','🍦','🥕','🍔','🍓','🍜','🥐','🍒','🐙','🍿','🍄','🧀','🫐'][type],x+size/2,y+size/2+size*.035);ctx.restore()}
 function drawPersonality(ctx,id,stage,rare,x,y,size,blink=0){
@@ -17,7 +31,24 @@ function drawPersonality(ctx,id,stage,rare,x,y,size,blink=0){
  const r=(x,y,w,h,c)=>{ctx.fillStyle=c;ctx.fillRect(x,y,w,h)},poly=(pts,c)=>{ctx.fillStyle=c;ctx.beginPath();pts.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.closePath();ctx.fill()},eye=(x,y)=>{r(x,y,3,blink===1?1:4,d);if(blink!==1)r(x,y,1,1,'#fff')};
  // Each path has a different anatomy, not a common body with different accessories.
  if(stage===0){r(23,24,18,3,d);r(19,27,26,20,d);r(23,47,18,4,d);r(22,28,20,18,p.color);r(25,30,14,10,light);eye(27,33);eye(34,33);r(21,49,6,3,p.color);r(37,49,6,3,p.color);ctx.restore();return}
- if(id===0){
+ if(id>=7){
+  // Thirteen additional collectible silhouettes: turtle, bat, ram, fox, penguin, deer, hound, frog, serpent, cat, and three rare creatures.
+  const kind=id-7, wide=stage>=2?5:0; r(18-wide,25,28+wide*2,26,d);r(21-wide,27,22+wide*2,20,p.color);eye(26,34);eye(37,34);r(30,41,5,2,light);
+  if(kind===0){r(14,19,36,14,d);r(16,20,32,12,'#587b64');r(22,22,20,8,p.color);r(9,33,9,9,p.color);r(47,33,9,9,p.color);r(13,48,8,8,p.color);r(45,48,8,8,p.color)}
+  else if(kind===1){poly([[18,28],[4,13],[7,8],[25,22]],d);poly([[44,28],[59,12],[61,17],[39,27]],d);poly([[18,28],[7,13],[11,12],[25,24]],p.color);poly([[44,28],[57,15],[57,19],[39,25]],p.color);r(24,14,5,12,p.color);r(36,14,5,12,p.color)}
+  else if(kind===2){r(16,12,8,18,d);r(40,12,8,18,d);r(18,13,5,15,p.color);r(41,13,5,15,p.color);r(18,49,9,10,p.color);r(39,49,9,10,p.color)}
+  else if(kind===3){poly([[18,27],[8,7],[16,9],[25,24]],d);poly([[40,26],[49,7],[56,9],[45,28]],d);r(12,10,8,13,p.color);r(46,10,8,13,p.color);poly([[43,40],[61,35],[56,47],[43,48]],p.color)}
+  else if(kind===4){r(22,8,18,19,d);r(24,10,14,15,'#e9f2ef');r(27,15,3,3,d);r(35,15,3,3,d);r(18,49,10,10,p.color);r(37,49,10,10,p.color);r(17,25,5,22,d);r(42,25,5,22,d)}
+  else if(kind===5){poly([[21,27],[13,5],[20,9],[29,23]],d);poly([[39,26],[48,5],[53,9],[44,28]],d);r(16,8,7,17,p.color);r(46,8,6,17,p.color);r(14,47,11,12,p.color);r(41,47,11,12,p.color)}
+  else if(kind===6){r(15,13,10,12,d);r(41,13,10,12,d);r(17,15,7,8,p.color);r(42,15,7,8,p.color);r(9,35,10,13,p.color);r(46,35,10,13,p.color);r(16,50,10,8,p.color);r(39,50,10,8,p.color)}
+  else if(kind===7){r(16,20,32,25,p.color);r(12,38,8,12,p.color);r(44,38,8,12,p.color);r(22,11,7,12,p.color);r(36,11,7,12,p.color);r(11,48,11,7,'#7eb67c');r(43,48,11,7,'#7eb67c')}
+  else if(kind===8){poly([[31,20],[12,8],[7,15],[21,29],[8,43],[17,47],[27,35],[35,53],[42,51],[39,35],[57,45],[59,37],[43,25],[53,10],[45,8]],p.color);r(28,21,8,27,d);r(30,23,4,22,p.color)}
+  else if(kind===9){poly([[20,18],[13,5],[23,9],[31,16],[41,6],[50,9],[44,22]],d);r(15,9,10,11,p.color);r(42,10,8,11,p.color);poly([[20,49],[42,49],[48,58],[15,58]],p.color);r(8,30,8,8,p.color);r(48,30,8,8,p.color)}
+  else if(kind===10){for(let i=0;i<3;i++){poly([[31,26],[4+i*4,10+i*11],[11+i*4,17+i*11],[27,32+i*2]],'#f2cf77');poly([[34,26],[60-i*4,10+i*11],[53-i*4,17+i*11],[39,32+i*2]],'#f2cf77')}r(23,6,18,12,'#ffe68b')}
+  else if(kind===11){for(let i=0;i<4;i++){r(4+i*15,47,8,13,p.color);r(7+i*15,42,4,6,'#c9b7ed')}r(22,11,20,12,'#c7b4e8');r(14,24,36,21,p.color);r(29,5,5,9,'#f8e2a1')}
+  else {for(let i=0;i<5;i++){poly([[31,27],[4+i*11,8+(i%2)*8],[12+i*10,17+(i%2)*8],[27,32]],'#91b5ff');poly([[34,27],[60-i*11,8+(i%2)*8],[52-i*10,17+(i%2)*8],[38,32]],'#91b5ff')}r(25,4,14,10,'#d5e6ff')}
+  if(stage===3){r(3,3,3,15,'#ffe59a');r(58,4,3,15,'#ffe59a');r(22,57,20,2,'#ffe59a')}ctx.restore();return;
+ }else if(id===0){
   // Soft rabbit, very long floppy ears, widening fluffy cloud body.
   poly([[14,27],[9,22],[7,5],[12,2],[18,7],[21,25]],d);poly([[43,26],[44,9],[51,3],[56,7],[55,26],[49,30]],d);r(10,7,6,14,'#ead6c5');r(12,9,3,10,'#e9a9b2');r(47,10,6,15,'#ead6c5');r(49,11,3,11,'#e9a9b2');
   const ex=stage>=2?4:0;poly([[17,22],[44,22],[50+ex,30],[50+ex,48],[44,55],[17,55],[10-ex,48],[10-ex,31]],d);r(15-ex,30,34+ex*2,18,'#e8d6c1');r(20,25,23,25,'#f4e6d5');r(19,47,27,6,'#f4e6d5');eye(24,33);eye(38,33);r(30,39,4,2,'#bd8a8b');r(17,40,5,2,'#dfa5a4');r(42,40,5,2,'#dfa5a4');r(13,53,12,5,'#e8d6c1');r(39,53,12,5,'#e8d6c1');if(stage===3){r(2,35,8,15,'#f4e6d5');r(54,33,8,17,'#f4e6d5');r(26,17,10,6,'#e9746b');r(32,14,3,4,'#89b971')}

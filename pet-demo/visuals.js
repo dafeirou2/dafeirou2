@@ -3,15 +3,15 @@ const FOODS = [
  {name:'苹果',family:0,persona:0,color:'#f97967'}, {name:'鸡腿',family:1,persona:1,color:'#da996a'},
  {name:'披萨',family:2,persona:2,color:'#ffd16b'}, {name:'炸弹',family:-1,persona:-1,color:'#ed827f'},
  {name:'香蕉',family:0,persona:4,color:'#ffe46b'}, {name:'西兰花',family:0,persona:5,color:'#8ad76e'},
- {name:'鲜鱼',family:1,persona:6,color:'#91ddeb'}, {name:'牛油果',family:0,persona:0,color:'#93c77f'},
- {name:'葡萄',family:0,persona:4,color:'#b58cde'}, {name:'寿司',family:1,persona:6,color:'#efb1b5'},
- {name:'甜甜圈',family:2,persona:2,color:'#f5a9bb'}, {name:'塔可',family:1,persona:1,color:'#e3bd65'},
- {name:'冰淇淋',family:2,persona:2,color:'#b9daf1'}, {name:'胡萝卜',family:0,persona:0,color:'#eea565'},
- {name:'汉堡',family:1,persona:1,color:'#d68b56'}, {name:'草莓',family:0,persona:0,color:'#f16d76'},
- {name:'拉面',family:1,persona:6,color:'#f3ca83'}, {name:'可颂',family:2,persona:2,color:'#dfa55d'},
+ {name:'鲜鱼',family:1,persona:6,color:'#91ddeb'}, {name:'牛油果',family:0,persona:7,color:'#93c77f'},
+ {name:'葡萄',family:0,persona:8,color:'#b58cde'}, {name:'寿司',family:1,persona:3,color:'#efb1b5'},
+ {name:'甜甜圈',family:2,persona:9,color:'#f5a9bb'}, {name:'塔可',family:1,persona:10,color:'#e3bd65'},
+ {name:'冰淇淋',family:2,persona:11,color:'#b9daf1'}, {name:'胡萝卜',family:0,persona:12,color:'#eea565'},
+ {name:'汉堡',family:1,persona:13,color:'#d68b56'}, {name:'草莓',family:0,persona:14,color:'#f16d76'},
+ {name:'拉面',family:1,persona:15,color:'#f3ca83'}, {name:'可颂',family:2,persona:16,color:'#dfa55d'},
  {name:'樱桃',family:0,persona:4,color:'#ef777b'}, {name:'章鱼烧',family:1,persona:6,color:'#d6a46d'},
  {name:'爆米花',family:2,persona:2,color:'#ffe5a0'}, {name:'蘑菇',family:0,persona:5,color:'#d67e69'},
- {name:'奶酪',family:2,persona:2,color:'#f1d95c'}, {name:'蓝莓',family:0,persona:5,color:'#8584cb'}
+ {name:'奶酪',family:2,persona:2,color:'#f1d95c'}, {name:'蓝莓',family:0,persona:8,color:'#8584cb'}
 ];
 const WORLDS = [
  {name:'浮岛花园',en:'SKY GARDEN',sub:'在树冠之间，接住第一口。',color:'#acd999',bg:'#122c2b',bottom:'#36514a',effect:'浮岛起伏'},
